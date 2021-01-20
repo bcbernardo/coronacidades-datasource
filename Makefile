@@ -3,6 +3,8 @@ VERSION=1.0
 LOADER_IMAGE_TAG=impulsogov/simulacovid:$(VERSION)-loader
 SERVER_IMAGE_TAG=impulsogov/simulacovid:$(VERSION)-server
 
+PWD=$(shell pwd -P)
+
 build-and-run-all: loader-build-run server-build-run
 
 # LOADER
